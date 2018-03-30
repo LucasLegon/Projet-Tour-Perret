@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
-import { Tuto1Component } from '../tuto1/tuto1.component';
-import { Tuto2Component } from '../tuto2/tuto2.component';
-import { Tuto3Component } from '../tuto3/tuto3.component';
+import { Tuto1Component } from './tuto1/tuto1.component';
+import { Tuto2Component } from './tuto2/tuto2.component';
+import { Tuto3Component } from './tuto3/tuto3.component';
 
 @Component({
   selector: 'app-tuto',
