@@ -1,0 +1,38 @@
+<svg width="45" height="48.00000000000001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <filter x="-0.10168" y="-0.098377" width="1.2034" height="1.1968" id="filter10685">
+   <feGaussianBlur stdDeviation="0.757592" id="feGaussianBlur10687"/>
+  </filter>
+  <linearGradient id="linearGradient5037">
+   <stop stop-color="#ffffff" offset="0" id="stop5039"/>
+   <stop stop-color="#ffffff" stop-opacity="0" offset="1" id="stop5041"/>
+  </linearGradient>
+  <radialGradient r="25.5" cx="814.5" cy="347.27" gradientUnits="userSpaceOnUse" id="radialGradient2665">
+   <stop stop-color="#ffdcdc" offset="0" id="stop5417"/>
+   <stop stop-color="#cf7575" offset="1" id="stop5419"/>
+  </radialGradient>
+  <linearGradient x1="0.5" y1="1.03125" x2="0.5" y2="-0.03125" id="linearGradient2667">
+   <stop stop-color="#862c2c" offset="0" id="stop5433"/>
+   <stop stop-color="#621b1b" offset="1" id="stop5435"/>
+  </linearGradient>
+  <linearGradient x1="0.499895" y1="0.007812" x2="0.499895" xlink:href="#linearGradient5037" y2="0.992166" id="linearGradient2669"/>
+  <linearGradient x1="0.672198" y1="0.944863" x2="0.564045" xlink:href="#linearGradient5037" y2="0.358664" id="linearGradient2671"/>
+ </defs>
+ <metadata>image/svg+xmlOpenclipartAudio Button Set 22006-12-26T00:00:00https://openclipart.org/detail/11577/-by--11577akiross</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="50" width="47" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="layer1">
+   <g stroke="null" transform="matrix(1.2224867612064154,0,0,1.2176576157496457,-303.98058689745983,-83.84866219315424) " id="Stop">
+    <path stroke="url(#linearGradient2667)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.0084" fill="url(#radialGradient2665)" d="m283.514563,90.533448a16.29408,16.29408 0 1 1 -32.58816,0a16.29408,16.29408 0 1 1 32.58816,0z" id="path9492"/>
+    <rect stroke="null" opacity="0.5" filter="url(#filter10685)" fill="#000000" x="262.806197" y="82.8682" width="14.902" height="15.402" transform="matrix(1.151,0,0,1.151,-43.467,-13.083) " id="rect10619"/>
+    <rect stroke="#9f2b2b" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" fill="#ffe4e4" x="259.770143" y="82.835536" width="14.902" height="15.402" id="rect9494"/>
+    <path stroke="null" fill="url(#linearGradient2669)" d="m277.953238,83.846021a10.73019,8.270151 0 1 1 -21.457663,0a10.73019,8.270151 0 1 1 21.457663,0z" id="path10595"/>
+    <path stroke="null" fill="url(#linearGradient2671)" d="m253.920143,96.726536c3.17,7.039 11.36,10.437 18.64,7.596c7.27,-2.839 10.98,-10.87 8.54,-18.186c-1.98,4.948 -5.93,9.094 -11.29,11.185c-5.36,2.092 -11.07,1.711 -15.89,-0.595z" id="path10597"/>
+   </g>
+  </g>
+ </g>
+</svg>

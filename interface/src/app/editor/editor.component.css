@@ -1,0 +1,376 @@
+/* ANIMATION Keyframes */
+
+@-webkit-keyframes anim_poubelle { /* Safari, Opera, Chrome */
+    0%{
+        transform: rotate(5deg);
+    }
+    
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+/* Fond d'écran */
+body {
+    background: url(fond.svg) no-repeat center center fixed;
+/* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+/* Flèches et orientation de la tour */
+/* Mise en forme des flèches et de la lettre N, E, S et W */
+#orientation_tour
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 235px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+#arrow_left:hover, #arrow_right:hover
+{
+    opacity: 0.7;
+	cursor:pointer;
+}
+
+#orientation
+{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: maroon;
+}
+
+
+
+/* Barre d'outil en haut à droite */
+/* composée de quatre sections : accueil, lecture, fonction, teinte */
+#outil
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(254,213,196);
+    border:2px solid rgb(245,0,0);
+    width:65%;
+    height:130px;
+    min-width:900px;
+    position: absolute; /* Position de la barre d'outil */
+    right: 0px;
+    top: 0px;
+}
+
+#accueil
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 150px;
+}
+
+#accueil_top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#accueil_down
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lecture
+{
+    display: flex;
+    flex-direction: column;
+    height:130px;
+    border-left:2px solid rgb(245,0,0);
+    border-right:2px solid rgb(245,0,0);
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#fonction
+{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+#piece_fonction
+{
+    position: relative;
+    top: 2px;
+}
+
+#duree
+{
+    position: relative;
+    top: 13px;
+}
+
+#duree_input
+{
+    width: 50px;
+    height: 23px;
+}
+
+#piece_fonction
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 30px;
+}
+
+#teinte
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 335px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    border-left: 2px solid rgb(245,0,0);
+}
+
+p
+{
+    text-align: center;
+}
+
+#bloc_color
+{
+    width: 200px;
+    min-width: 200px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border:3px solid rgb(5,5,5);
+    position: relative;
+    right: 20px;
+}
+
+#color_top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#color_down
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.color
+{   
+    border: 2px solid white;
+}
+
+#Couleur
+{
+    height: 83px;
+    position: relative;
+    bottom: 10px;
+}
+
+#para_color
+{
+    position: relative;
+    top: 50px;
+    right: 60px;
+}
+
+
+/* Hover */
+#Allumer:hover, #Eteindre:hover, #Degrader:hover, #Clignoter:hover, #Couleur:hover{
+    opacity: 0.7;
+	cursor:grab;
+}
+
+.fichier:hover{
+    opacity: 0.7;
+	cursor:pointer;
+}
+
+
+
+
+/* Partie centrale de l'interface */
+/* La section "Section" regroupe toute la partie centrale : la tour + noms des étages + la partie édition */
+section /* Partie centrale */
+{
+    height: 796px;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#couleur_etage
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 410px;
+    
+    position: relative;
+    top: 120px;
+    left: 88px;
+}
+
+#color_etage1
+{
+    width: 80px;
+    height: 130px;
+    background-color: silver;
+}
+
+#color_etage2
+{
+    width: 80px;
+    height: 130px;
+    background-color: silver;
+}
+
+#color_etage3
+{
+    width: 80px;
+    height: 130px;
+    background-color: silver;
+}
+
+#tour
+{
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1;
+}
+
+#nom_etage
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: space-around;
+    height: 620px;
+    position: relative;
+    top: 50px;
+    right: 40px;
+}
+
+h1
+{
+    font-family: 'Andika', Arial, sans-serif;
+    font-size: 3em;
+    color: blue;
+    padding: 5px;
+    padding-top: 0px;
+    background: rgba(254,213,196,0.5);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
+}
+
+
+
+
+/* Partie de l'édition avec les trois zones correspondant aux trois étages */
+/* Barre de temps */
+#barre_temps
+{
+    width: 3px;
+    height: 600px;
+    background-color: silver;
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    left: 41px;
+    z-index: 2;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+
+#etage1, #etage2, #etage3 {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.zone-piece
+{
+    display: flex;
+    flex-direction: column; 
+}
+
+.start
+{
+    position: relative;
+    left: 20px;
+}
+.zone {
+    height: 63px;
+    width: 61px;
+    float: left;
+    z-index: 1;
+}
+
+.zone_hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8) inset;
+}
+
+.coulor_top #Couleur{
+    position: relative;
+    top: 0px;
+}
+
+.coulor_inverse #Couleur{
+    position: relative;
+    bottom: 21px;
+    transform: rotate(180deg);
+}
+
+#Exit
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.poubelle{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.poubelle_hover{
+    animation: anim_poubelle 0.15s alternate infinite;
+}

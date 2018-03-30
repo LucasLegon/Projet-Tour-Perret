@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    background: url(fond.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    margin : 0px;
+    height: 795px;
+}
+
+#titre
+{
+    position: relative;
+    top: 20px;
+}
+
+h1
+{
+    font-size: 2em;
+    text-align: center;
+}
+
+#apropos
+{
+    display: flex;
+    flex-direction: column;
+    background: rgb(70,200,70);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1) inset;
+    border: 12px rgb(0,125,0) ridge;
+    border-radius: 50px;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    font-family: 'Andika', Arial, sans-serif;
+    color: white;
+}
+
+#paragraphe
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    text-align: justify;
+    font-size: 0.8em;
+    
+    position: relative;
+    top: 30px;
+}
+
+#images_ecoles
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: relative;
+    top: 70px;
+}
+
+#iut1, #polytech, #grenoble
+{
+    box-shadow: 6px 6px 6px black;
+}
+
+#back
+{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 110px;
+    right: 30px;
+}
+
+#Exit:hover{
+    opacity: 0.7;
+	cursor:pointer;
+}

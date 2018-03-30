@@ -1,0 +1,289 @@
+<body>
+    
+    
+    <ng-template #modal let-c="close" let-d="dismiss" id="modal">
+          <div class="modal-header">
+            <h4 class="modal-title">Se connecter à une tour</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p> ID de la tour : <input [(ngModel)]="inputMacId" type="number" name="Mac_ID" id="Mac_ID" placeholder="Ex : 121212" size="10" maxlength="10" /></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="c('Send')">Se connecter</button>
+
+          </div>
+    </ng-template>
+    
+    
+    
+    <img (click)="goBack()" class="fichier" id="Exit" src="assets/ImPNG/exit.svg" width="45" height="45" title="Quitter">
+    <img class="poubelle" src="assets/ImPNG/poubelle.png" width="75" height="90"/>
+    <div id="orientation_tour">
+        <img (click)="goLeft()" id="arrow_left" src="assets/ImPNG/arrow_left.svg" width="70"/>
+        <p id="orientation">N</p>
+        <img (click)="goRight()" id="arrow_right" src="assets/ImPNG/arrow_right.svg" width="70"/>
+    </div>
+    <header id="outil">
+        <div id="accueil">
+            <div id="accueil_top">
+                <img (click)="goNew()" class="fichier" id="New" src="assets/ImPNG/new.svg" width="45" height="55" title="Nouveau">
+                <img (click)="goSave()" class="fichier" id="Save" src="assets/ImPNG/save.svg" width="45" height="48" title="Enregistrer">
+            </div>
+            
+            <div id="accueil_down">
+                <img (click)="open(modal)" class="fichier" id="Send" src="assets/ImPNG/envoyer.svg" width="45" height="45" title="Envoyer">
+                <img (click)="goUndo()" class="fichier" id="Undo" src="assets/ImPNG/undo.svg" width="45" height="49" title="Annuler">
+            </div>
+        </div>
+            
+        <div id="lecture">
+            <img (click)="start()" class="fichier" id="play" src="assets/ImPNG/play.svg" width="45" height="47" title="Play">
+            <img (click)="stop()" class="fichier" id="stop" src="assets/ImPNG/stop.svg" width="45" height="47" title="Stop">
+        </div>
+            
+        <div id="fonction">
+            <p id="duree"> Durée des pièces : <input id="duree_input" type="number" min="1" max="10" step="0.1" value="1"/> secondes</p>
+            <div id="piece_fonction">
+                <p> <img class="fonct" id="Allumer" src="assets/ImPNG/Pieces/allumer.png" width="80" height="63"> <br/> Allumer </p>
+                <p> <img class="fonct" id="Eteindre" src="assets/ImPNG/Pieces/eteindre.png" width="80" height="63"> <br/> Eteindre </p>
+                <p> <img class="fonct" id="Degrader" src="assets/ImPNG/Pieces/degrader.png" width="80" height="63"> <br/> Dégrader </p>
+                <p> <img class="fonct" id="Clignoter" src="assets/ImPNG/Pieces/clignoter.png" width="80" height="63"> <br/> Clignoter </p>
+            </div>
+        </div>
+            
+        <div id="teinte">
+            <div class="fonct" id="Couleur">
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" class="piece_color" width="62" height="82">
+                    <path inkscape:connector-curvature="0" stroke="#000000" d="m58.252483,62.590788l-19.747374,0c-1.500802,0 -3.001605,0 -3.001605,1.533054c0,3.066099 3.001605,4.679842 3.001605,9.278995c0,4.599153 -3.001605,7.745951 -7.582993,7.745951c-4.581398,0 -7.582993,-3.066108 -7.582993,-7.745951c0,-4.679842 3.001595,-6.212896 3.001595,-9.278995c0,-1.533054 -1.500802,-1.533054 -3.001595,-1.533054l-19.747384,0c-3.001605,0 -3.001605,0 -3.001605,-3.066099l0,-20.171734c0,-15.491892 0,0 0,-15.491892l0,-20.171734c0,-3.066099 0,-3.066099 3.001605,-3.066099l19.747384,0c15.165986,0 0,0 15.165986,0l19.747374,0c3.001605,0 3.001605,0 3.001605,3.066099l0,20.171734c0,15.491892 0,0 0,15.491892l0,20.171734c0.078991,3.066099 0.078991,3.066099 -3.001605,3.066099z" id="couleur_piece" class="couleur_piece"  sodipodi:nodetypes="ssssssssssccssccsscccs" style="fill:#6a89cc;fill-opacity:1"/>
+                </svg>
+            </div>  
+            <p id="para_color"> Couleur </p>
+            <div id="bloc_color">
+                <div id="color_top">
+                    <img (click)="putRose()" class="color" id="Rose" src="assets/ImPNG/Couleurs/rose.png" width="30" height="30">
+                    <img (click)="putPurple()" class="color" id="Purple" src="assets/ImPNG/Couleurs/violet.png" width="30" height="30">
+                    <img (click)="putOrange()" class="color" id="Orange" src="assets/ImPNG/Couleurs/orange.png" width="30" height="30">
+                    <img (click)="putVert()" class="color" id="Vert" src="assets/ImPNG/Couleurs/vert.png" width="30" height="30">
+                </div>
+                    
+                <div id="color_down">
+                    <img (click)="putBlanc()" class="color" id="Blanc" src="assets/ImPNG/Couleurs/blanc.png" width="30" height="30">
+                    <img (click)="putRouge()" class="color" id="Rouge" src="assets/ImPNG/Couleurs/rouge.png" width="30" height="30">
+                    <img (click)="putJaune()" class="color" id="Jaune" src="assets/ImPNG/Couleurs/jaune.png" width="30" height="30">
+                    <img (click)="putBleu()" class="color" id="Bleu" src="assets/ImPNG/Couleurs/bleu.png" width="30" height="30">
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <section>
+        <div id="couleur_etage">
+            <div id="color_etage3">
+        
+            </div>
+
+            <div id="color_etage2">
+
+            </div>
+
+            <div id="color_etage1">
+
+            </div>
+        </div>
+        
+        <img id="tour" src="assets/ImPNG/Tour_Perret.svg" width="100" height="730">
+        
+        <div id="nom_etage">
+            <h1>Etage 3</h1>
+            <h1>Etage 2</h1>
+            <h1>Etage 1</h1>
+        </div>
+            
+        <div id="barre_temps">
+                
+        </div>
+        <div id="editor">
+            <div id="etage3">
+                <img class="start" src="assets/ImPNG/Pieces/start.png" width="85" height="64"/>
+                <div class="zone-piece">
+                    <div class="coulor_top" id="etage3_top">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+
+                    <div id="etage3_middle">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+
+                    <div class="coulor_inverse" id="etage3_down">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="etage2">
+                <img class="start" src="assets/ImPNG/Pieces/start.png" width="80" height="63"/>
+                <div class="zone-piece">
+                    <div class="coulor_top" id="etage2_top">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+
+                    <div id="etage2_middle">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+
+                    <div class="coulor_inverse" id="etage2_down">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="etage1">
+                <img class="start" src="assets/ImPNG/Pieces/start.png" width="80" height="63"/>
+                <div class="zone-piece">
+                    <div class="coulor_top" id="etage1_top">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+
+                    <div id="etage1_middle">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+
+                    <div class="coulor_inverse" id="etage1_down">
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                        <div class="zone"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>

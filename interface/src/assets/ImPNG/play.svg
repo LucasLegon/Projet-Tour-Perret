@@ -1,0 +1,40 @@
+<svg width="45" height="47.99999999999999" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <filter id="filter6084">
+   <feGaussianBlur stdDeviation="1.54827" id="feGaussianBlur6086"/>
+  </filter>
+  <linearGradient x1="0.672218" y1="0.944958" x2="0.564049" xlink:href="#linearGradient5037" y2="0.358778" id="linearGradient9542"/>
+  <linearGradient x1="0.499895" y1="0.007812" x2="0.499895" xlink:href="#linearGradient5037" y2="0.992166" id="linearGradient9540"/>
+  <linearGradient x1="0.499563" y1="1.0328" x2="0.499563" y2="-0.019599" id="linearGradient10617">
+   <stop stop-color="#286a27" offset="0" id="stop10613"/>
+   <stop stop-color="#264826" offset="1" id="stop10615"/>
+  </linearGradient>
+  <radialGradient r="37.709" gradientTransform="matrix(.87056 0 0 .87056 68.738 -5.1012)" cx="531.04" cy="-27.632" gradientUnits="userSpaceOnUse" id="radialGradient9538">
+   <stop stop-color="#8fe68c" offset="0" id="stop5006"/>
+   <stop stop-color="#29902b" offset="1" id="stop5008"/>
+  </radialGradient>
+  <linearGradient id="linearGradient5037">
+   <stop stop-color="#ffffff" offset="0" id="stop5039"/>
+   <stop stop-color="#ffffff" stop-opacity="0" offset="1" id="stop5041"/>
+  </linearGradient>
+ </defs>
+ <metadata>image/svg+xmlOpenclipartAudio Button Set 42006-12-26T00:00:00https://openclipart.org/detail/11575/-by--11575akiross</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="50" width="47" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="layer1">
+   <g stroke="null" transform="matrix(0.5868630907688227,0,0,0.5857130950927916,-341.7052056056115,114.41647378412749) " id="Play">
+    <path stroke="url(#linearGradient10617)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.9543" fill="url(#radialGradient9538)" d="m656.271527,-158.126333a35.709,35.709 0 1 1 -0.01,-0.736" id="path9472"/>
+    <g stroke="null" id="g9474">
+     <path stroke="#000000" opacity="0.5" stroke-linejoin="round" filter="url(#filter6084)" stroke-linecap="round" stroke-width="3.076" fill="#000000" d="m607.970526,-175.904335l0,38.32l32.94,-19.01l-32.94,-19.31z" id="path9476"/>
+     <path stroke="#33543c" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.0762" fill="#d6ffdc" d="m606.210526,-177.674335l0,38.32l32.93,-19.01l-32.93,-19.31z" id="path9478"/>
+    </g>
+    <path stroke="null" fill="url(#linearGradient9540)" d="m644.583004,-172.627896a24.040951,18.561018 0 1 1 -48.075813,0a24.040951,18.561018 0 1 1 48.075813,0z" id="path9480"/>
+    <path stroke="null" fill="url(#linearGradient9542)" d="m590.829528,-143.717337c7.1,15.8 25.44,23.42 41.75,17.05c16.3,-6.37 24.61,-24.4 19.14,-40.82c-4.43,11.11 -13.28,20.41 -25.28,25.11c-12.02,4.69 -24.82,3.84 -35.61,-1.34z" id="path9482"/>
+   </g>
+  </g>
+ </g>
+</svg>

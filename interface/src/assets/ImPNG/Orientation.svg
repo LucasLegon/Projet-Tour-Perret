@@ -1,0 +1,53 @@
+<svg width="580" height="180" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs stroke="null">
+  <linearGradient spreadMethod="pad" y2="0" x2="1" y1="0" x1="0" id="svg_182">
+   <stop offset="0" stop-color="#0000ff"/>
+   <stop offset="1" stop-color="#ffff00"/>
+  </linearGradient>
+ </defs>
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="182" width="582" y="-1" x="-1"/>
+  <g style="vector-effect: non-scaling-stroke;" stroke="null" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <metadata stroke="null" transform="matrix(1.7777778837415923,0,0,1.7777778837415923,0,0) " id="svg_105">image/svg+xmlarrows2</metadata>
+  <defs stroke="null">
+   <style style="vector-effect: non-scaling-stroke;" stroke="null">.cls-1{fill:#202020;}</style>
+  </defs>
+  <ellipse ry="178.500014" rx="290.500018" id="svg_109" cy="220.415815" cx="289.771915" stroke-width="1.5" fill="#fed8c1"/>
+  <metadata transform="matrix(7.716048794028211,0,0,7.716048794028211,0,0) " id="svg_122">image/svg+xml_</metadata>
+
+  <g id="svg_124"/>
+  <metadata transform="matrix(7.716048794028211,0,0,7.716048794028211,0,0) " id="svg_137">image/svg+xml</metadata>
+
+  <metadata transform="matrix(7.716048794028211,0,0,7.716048794028211,0,0) " id="svg_152">image/svg+xml_</metadata>
+
+  <g stroke="null" id="svg_154">
+   <rect stroke="null" transform="rotate(-90 294.50366210937506,85.27806091308592) matrix(2.3112867586364207,0,0,2.482206267353537,184.88052789729593,147.37714859385346) " id="svg_151" height="1" width="8" y="-25.517705" x="43.4295"/>
+   <rect stroke="null" transform="rotate(-90 289.53927612304693,85.27857971191405) matrix(2.3112867586364207,0,0,2.482206267353537,184.88052789729593,147.37714859385346) " id="svg_150" height="1" width="8" y="-25.517715" x="41.281611"/>
+   <rect stroke="null" transform="rotate(-90 284.57458496093756,85.27781677246092) matrix(2.3112867586364207,0,0,2.482206267353537,184.88052789729593,147.37714859385346) " id="svg_149" height="1" width="8" y="-25.517701" x="39.133696"/>
+   <path transform="rotate(-90 289.5392456054688,77.18853759765624) " stroke="null" id="svg_148" d="m323.052926,36.232123l-25.42415,27.30427l-34.6693,0l-6.93387,7.44662l0,12.41103l6.93387,7.44662l9.24514,0c18.4903,0 0,0 18.4903,0l6.93386,0l25.42415,27.30427l0,-3.52474l-20.2931,-21.79377l20.2931,7.94306l0,-47.16192l-20.2931,7.91824l20.2931,-21.79377l0,-3.49991zm-64.71603,46.11939l0,-10.3508l4.62258,-4.96441l0,20.27963l-4.62258,-4.96442zm6.93386,6.00694l0,-22.33985l32.35802,0l0,22.33985l-32.35802,0z"/>
+  </g>
+
+  <metadata transform="matrix(5.345393777825848,0,0,5.345393777825848,0,0) " id="svg_177">image/svg+xml</metadata>
+  <g stroke="null" id="svg_179">
+   <g stroke="null" transform="matrix(1.0663206643189498,0,0,0.7101170810835583,47.495578333853075,62.74242092005193) " id="svg_168">
+    <g stroke="null" id="svg_169">
+     <ellipse stroke="#ffffff" fill="#020000" stroke-width="1.083182" stroke-miterlimit="4" id="svg_176" cx="226.435337" cy="-81.938982" rx="48.280758" ry="6.147747"/>
+     <path stroke="#0d040d" fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="4" d="m216.783274,-7.659482l20.28006,0" id="svg_175"/>
+     <path stroke="#000000" fill="none" stroke-width="3.75689" stroke-linecap="round" stroke-miterlimit="4" d="m236.941004,-7.536452l36.97368,-70.15259" id="svg_174"/>
+     <path fill="none" stroke-width="0.377976" d="m216.323194,-9.258892c-0.72902,-1.21949 -37.57871,-70.0607 -37.81551,-70.6455c-0.06799,-0.16791 0.44735,-0.0667 1.1452,0.22486c3.21152,1.34185 14.14534,2.83734 26.57068,3.63423c8.2582,0.52964 32.83491,0.5304 41.3884,0.001c11.98158,-0.74118 21.27298,-1.9429 25.44338,-3.29077c1.00093,-0.32349 1.90899,-0.49905 2.01792,-0.39013c0.10892,0.10892 -8.43565,16.28473 -18.98794,35.94624l-19.18598,35.7482l-9.9209,0l-9.9209,0l-0.73435,-1.22813z" id="svg_173"/>
+     <path fill="none" stroke-width="0.378" stroke-miterlimit="4" d="m210.192314,-76.451212c-20.33294,-1.00814 -34.40081,-3.56841 -32.45956,-5.90746c1.56197,-1.88206 10.88717,-3.57848 26.03397,-4.73604c8.23494,-0.62934 38.24619,-0.62984 46.49107,-0.00079c15.86797,1.21067 26.08036,3.22325 26.08036,5.13972c0,1.94836 -10.64782,4.05925 -25.89137,5.13286c-7.76019,0.54656 -32.17994,0.77204 -40.25447,0.3717l0,0.00001z" id="svg_172"/>
+     <path stroke="#000000" fill="none" stroke-width="3.76981" stroke-linecap="round" stroke-miterlimit="4" d="m216.968214,-7.554852l-36.8672,-70.20976" id="svg_171"/>
+     <path stroke="#000000" fill="#020000" stroke-width="2.939782" stroke-linecap="round" stroke-miterlimit="4" transform="translate(0,-187.43247985839844) scale(0.2645833194255829) " id="svg_170" d="m754.537106,541.601251c-38.44964,-71.62387 -70.03141,-130.54121 -70.1817,-130.92744c-0.1626,-0.41785 0.26693,-0.4928 1.06066,-0.18506c0.73366,0.28444 4.9932,1.27287 9.46565,2.19651c74.0459,15.29167 250.13499,15.44827 324.58303,0.28866c3.70619,-0.75468 7.82169,-1.6828 9.14555,-2.06247c1.32386,-0.37968 2.48431,-0.61305 2.57876,-0.5186c0.0945,0.0945 -31.37304,58.95565 -69.92777,130.80267l-70.09951,130.63092l-33.35812,0l-33.35811,0l-69.90844,-130.22519z"/>
+    </g>
+   </g>
+  </g>
+  <text stroke="url(#svg_182)" transform="matrix(1.3984663013527125,0,0,1.3260828197525427,-145.9306828777177,-123.88321098737502) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_184" y="213.099241" x="249.730559" stroke-width="0" fill="#000000">Orientation</text>
+ </g>
+</svg>

@@ -1,0 +1,177 @@
+/* ANIMATION Keyframes */
+
+@-webkit-keyframes anim_etage1 { /* Safari, Opera, Chrome */
+    0% {
+        background-color: fuchsia;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+@-webkit-keyframes anim_etage2 { /* Safari, Opera, Chrome */
+    from {
+        background-color: white;
+    }
+    
+    20% {
+        background-color: gray;
+    }
+    
+    40% {
+        background-color: red;
+    }
+    
+    60% {
+        background-color: maroon;
+    }
+
+    80% {
+        background-color: aqua;
+    }
+
+    to {
+        background-color: teal;
+    }
+}
+
+@-webkit-keyframes anim_etage3 { /* Safari, Opera, Chrome */
+    from {
+        background-color: red;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+body{
+    display: flex;
+    background: url(fond.svg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    margin : 0px;
+    height: 795px;
+}
+
+#titre
+{
+    position: relative;
+    top: 20px;
+}
+
+h1
+{
+    font-size: 2em;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/* Bloc central */
+#tuto
+{
+    display: flex;
+    flex-direction: column;
+    background: rgb(70,70,255);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1) inset;
+    border: 12px rgb(0,0,255) ridge;
+    border-radius: 50px;
+    width: 550px;
+    height: 650px;
+    margin: auto;
+    font-family: 'Andika', Arial, sans-serif;
+    color: white;
+    justify-content: space-between;
+}
+
+
+
+/* Mise en page du bloc */
+#consigne
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 380px;
+    text-align: justify;
+    font-size: 0.8em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.paragraphe
+{
+    width: 370px;
+}
+
+#consigne_tour, #consigne_start
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image_tour
+{
+    position: relative;
+    right: 30px;
+}
+
+
+
+
+/* Animations TOUR */
+#lumiere
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 35px;
+    top: 37px;
+}
+
+#etage1
+{
+    width: 21px;
+    height: 37px;
+    animation: anim_etage1 2s steps(2) infinite;
+}
+
+#etage2
+{
+    width: 21px;
+    height: 37px;
+    animation: anim_etage2 6s alternate infinite;
+}
+
+#etage3
+{
+    width: 21px;
+    height: 37px;
+    animation: anim_etage3 3s alternate infinite;
+}
+
+#Exit
+{
+    position: relative;
+    left: 450px;
+}
+
+#Exit:hover{
+    opacity: 0.7;
+	cursor:pointer;
+}
